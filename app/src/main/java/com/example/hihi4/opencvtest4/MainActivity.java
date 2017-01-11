@@ -46,7 +46,7 @@ public class MainActivity extends Activity implements CameraBridgeViewBase.CvCam
         System.loadLibrary("native-lib");
     }
 
-    private boolean hasPermission(String[] permissions) {
+    private boolean hasPermissions(String[] permissions) {
         int ret = 0;
         //스트링 배열에 있는 퍼미션들의 허가 상태 여부 확인
         for(String perms : permissions){
