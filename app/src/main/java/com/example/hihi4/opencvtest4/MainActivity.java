@@ -5,14 +5,12 @@ import android.content.DialogInterface;
 import android.content.pm.PackageManager;
 import android.content.res.AssetManager;
 import android.os.Build;
+import android.os.Bundle;
 import android.os.Environment;
 import android.support.v7.app.AlertDialog;
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.util.Log;
 import android.view.SurfaceView;
 import android.view.WindowManager;
-import android.widget.TextView;
 
 import org.opencv.android.BaseLoaderCallback;
 import org.opencv.android.CameraBridgeViewBase;
@@ -32,7 +30,7 @@ public class MainActivity extends Activity implements CameraBridgeViewBase.CvCam
     private static final String TAG = "opencv";
     private CameraBridgeViewBase mOpenCvCameraView;
 
-    public static native long loadCascade(String cascadeFileName );
+    public static native long loadCascade(String cascadeFileName);
     public static native void detect(long cascadeClassifier_face, long  cascadeClassifier_eye, long matAddrInput, long matAddrResult);
     public long cascadeClassifier_face = 0;
     public long cascadeClassifier_eye = 0;

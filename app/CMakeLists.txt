@@ -59,4 +59,4 @@ target_link_libraries( # Specifies the target library.
                        ${log-lib}
                        ${android-lib}
 
-                       lib-opencv)
+                       lib_opencv)
