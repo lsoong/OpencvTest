@@ -137,7 +137,6 @@ public class MainActivity extends Activity implements CameraBridgeViewBase.CvCam
                 }
                 break;
         }
-
     }
 
     private void showDialogforPermission(String msg) {
@@ -176,7 +175,7 @@ public class MainActivity extends Activity implements CameraBridgeViewBase.CvCam
         mOpenCvCameraView = (CameraBridgeViewBase)findViewById(R.id.activity_surface_view);
         mOpenCvCameraView.setVisibility(SurfaceView.VISIBLE);
         mOpenCvCameraView.setCvCameraViewListener(this);
-        mOpenCvCameraView.setCameraIndex(1);//front-camera(1) // delete(back-camera)
+        //mOpenCvCameraView.setCameraIndex(1);//front-camera(1) // delete(back-camera)
         mLoaderCallback.onManagerConnected(LoaderCallbackInterface.SUCCESS);
     }
 
